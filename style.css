@@ -1,0 +1,715 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.inputs .signup {
+  margin-bottom: 16px;
+  color: #b7b3b3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputs .signup a {
+  color: white;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputs p {
+  color: #b7b3b3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.signin-form h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.signup {
+  display: flex;
+}
+
+.inputs button {
+  position: relative;
+  z-index: 10;
+  border: none;
+  padding: 12px 140px;
+  margin-bottom: 12px;
+  background-color: rgb(229, 9, 20);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.inputs input {
+  background-color: rgba(0, 0, 0, 0.479);
+  height: 50px;
+  width: 83%;
+  padding-left: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.inputs {
+  padding-top: 33px;
+}
+
+.box-signin {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding-left: 55px;
+  padding-top: 55px;
+  color: white;
+  height: 75vh;
+  width: 35%;
+  margin-top: 11.5%;
+  margin-left: 33%;
+  opacity: 0.67;
+  background-color: rgba(0, 0, 0, 0.968);
+  position: absolute;
+  top: 0;
+}
+
+.main {
+  background-image: url(imgs/backgroundimg.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.55;
+  background-color: rgba(0, 0, 0, 0.968);
+  position: absolute;
+  top: 0;
+}
+
+.main nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: auto;
+  height: 70px;
+  position: relative;
+  z-index: 10;
+  padding-top: 26px;
+}
+
+.main nav button:hover {
+  background-color: rgb(189, 15, 15);
+}
+
+.main nav button {
+  color: white;
+  background-color: red;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-family: sans-serif;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  gap: 18px;
+  padding: px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text1 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;
+}
+
+.text2 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;
+}
+
+.text3 {
+  font-weight: 800;
+  text-align: center;
+}
+
+.text4 {
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+}
+
+.email {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.email input {
+  color: white;
+  margin-right: 6px;
+  height: 60px;
+  width: 33%;
+  padding-left: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  background-color: rgba(21, 20, 20, 0.753);
+  border: 1px solid rgba(109, 108, 108, 0.753);
+  border-radius: 5px;
+}
+
+.email button:hover {
+  background-color: rgb(185, 11, 11);
+}
+
+.email button {
+  transition: all 0.2s ease-out;
+  padding: 18px 30px;
+  background-color: red;
+  color: white;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  border: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seperate {
+  height: 4px;
+
+  background-color: rgb(255, 18, 58);
+}
+
+.sec1 {
+  height: 70vh;
+}
+
+.butt {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0px 5px 151px;
+  row-gap: 16px;
+}
+
+.butt select {
+  margin: 0px 17px 0px 0px;
+  color: white;
+  background-color: rgba(36, 35, 35, 0.637);
+  padding: 10px 16px;
+  border: 1px solid rgba(151, 146, 146, 0.753);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.butt p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.temp {
+  display: flex;
+  margin-left: 150px;
+}
+
+.temp img:hover {
+  transform: scale(107%);
+}
+
+.temp img {
+  transition: transform 0.4s ease-out;
+  height: 230px;
+  width: 180px;
+  border-radius: 6px;
+  margin: 24px 12px;
+  cursor: pointer;
+}
+
+.sec2 {
+  color: white;
+  height: 70vh;
+  flex-direction: column;
+  display: flex;
+  margin: 0px 0px 5px 151px;
+}
+
+.sec2 > :first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  margin-top: 15px;
+}
+
+.card1 {
+  color: rgb(236, 242, 242);
+  background-image: linear-gradient(to top, #210e18, #1b1f3f);
+  border-radius: 18px;
+  margin: 6px;
+  height: 330px;
+  width: 230px;
+}
+
+.card1 h2 {
+  display: flex;
+  margin: 30px 12px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.card1 p {
+  color: #babac3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin: 18px 10px 0px 18px;
+}
+
+.card1 img {
+  position: relative;
+  top: 50px;
+  bottom: 70px;
+  height: 70px;
+  width: 70px;
+  margin: 50px 0px 0px 150px;
+}
+
+.card2 {
+  color: rgb(236, 242, 242);
+  background-image: linear-gradient(to top, #210e18, #1b1f3f);
+  border-radius: 18px;
+  margin: 6px;
+  height: 330px;
+  width: 230px;
+}
+
+.card2 h2 {
+  display: flex;
+  margin: 30px 12px 0px 18px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.card2 p {
+  color: #babac3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin: 18px 10px 0px 18px;
+}
+
+.card2 img {
+  position: relative;
+  top: 20px;
+  bottom: 70px;
+  height: 70px;
+  width: 70px;
+  margin: 50px 0px 0px 150px;
+}
+
+.card3 {
+  color: rgb(236, 242, 242);
+  background-image: linear-gradient(to top, #210e18, #1b1f3f);
+  border-radius: 18px;
+  margin: 6px;
+  height: 330px;
+  width: 230px;
+}
+
+.card3 h2 {
+  display: flex;
+  margin: 30px 12px 0px 18px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.card3 p {
+  color: #babac3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin: 18px 10px 0px 18px;
+}
+
+.card3 img {
+  position: relative;
+  top: 20px;
+  bottom: 70px;
+  height: 70px;
+  width: 70px;
+  margin: 50px 0px 0px 150px;
+}
+
+.card4 {
+  color: rgb(236, 242, 242);
+  background-image: linear-gradient(to top, #210e18, #1b1f3f);
+  border-radius: 18px;
+  margin: 6px;
+  height: 330px;
+  width: 230px;
+}
+
+.card4 h2 {
+  display: flex;
+  margin: 30px 15px 0px 18px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.card4 p {
+  color: #babac3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 18px 9px 0px 24px;
+}
+
+.card4 img {
+  position: relative;
+  top: 8px;
+  bottom: 70px;
+  height: 55px;
+  width: 60px;
+  margin: 50px 0px 0px 150px;
+}
+
+.sec3 {
+  height: 115vh;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  margin: 0px 0px 5px 151px;
+}
+
+.sec3 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  margin-top: 23px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.faq:hover {
+  background-color: rgba(99, 98, 98, 0.717);
+}
+
+.faq {
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75vw;
+  cursor: pointer;
+  background-color: rgba(63, 63, 63, 0.717);
+  padding: 24px;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+footer {
+  height: 100vh;
+}
+
+footer p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+}
+
+.email2 {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+}
+
+.email2 input {
+  color: white;
+  margin-right: 6px;
+  height: 60px;
+  width: 43%;
+  padding-left: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  background-color: rgba(21, 20, 20, 0.753);
+  border: 1px solid rgba(109, 108, 108, 0.753);
+  border-radius: 5px;
+}
+
+.email2 button:hover {
+  background-color: rgb(185, 11, 11);
+}
+
+.email2 button {
+  transition: all 0.2s ease-out;
+  padding: 16px 23px;
+  background-color: red;
+  color: white;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 24px;
+  border: none;
+  font-weight: 550;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer > ol {
+  color: rgb(184, 181, 181);
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0px 5px 151px;
+  cursor: pointer;
+}
+
+.grid {
+  color: rgb(165, 162, 162);
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 40px 160px 5px 151px;
+}
+
+.grid ol {
+  margin: 8px 0px;
+  cursor: pointer;
+}
+
+footer span select {
+  margin: 40px 160px 5px 151px;
+  color: white;
+  background-color: rgba(32, 30, 30, 0.637);
+  padding: 6px 32px;
+  border: 1px solid rgba(161, 157, 157, 0.753);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer h5 {
+  color: rgb(142, 141, 141);
+  margin: 40px 160px 5px 151px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main nav {
+    max-width: 90vw;
+  }
+
+  .sec1 {
+    height: 20vh;
+  }
+
+  .sec1 {
+    position: relative;
+    z-index: 20;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 40px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email input,
+  .email2 input {
+    padding: 16px 100px 16px 20px;
+  }
+
+  .temp img {
+    height: 180px;
+    width: 130px;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    flex-basis: 45%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    height: auto;
+  }
+
+  .sec1 {
+    height: 180vh;
+    flex-direction: column;
+  }
+
+  .sec2 {
+    height: 160vh;
+    margin: 0px;
+  }
+
+  .sec2 p {
+    margin: 0px 100px;
+  }
+
+  .sec3 {
+    height: 80vh;
+    margin: 0px 50px;
+  }
+
+  .faq {
+    width: 80vw;
+  }
+
+  .sec1 {
+    position: relative;
+    z-index: 20;
+  }
+
+  .temp {
+    margin: 0px 0px 5px 0px;
+  }
+
+  .main nav {
+    max-width: 100vw;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 30px;
+  }
+
+  .email button,
+  .email2 button {
+    margin: 6px;
+    font-size: 16px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email input,
+  .email2 input {
+    padding: 14px 50px 14px 18px;
+  }
+
+  .temp {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .temp img {
+    height: 210px;
+    width: 160px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    margin: 23px 0px 0px 0px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .email2 input {
+    padding: 0px 60px 14px 18px;
+  }
+
+  footer ol {
+    display: block;
+    margin: 23px 0px 0px 0px;
+  }
+
+  .butt select {
+    display: flex;
+    margin: 12px;
+    padding: 12px 180px 12px 122px;
+  }
+
+  .butt {
+    align-items: center;
+    text-align: center;
+
+    margin: 34px 0px 23px 0px;
+  }
+}
